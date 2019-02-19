@@ -7,9 +7,31 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>HELLPO </h1>
-    <video id="videoPlayer" controls>
-      <source src="/video" type="video/mp4">
+    <center><h1>TRIAL</h1></center>
+    <video id="videoPlayer" controls style="width: 70% !important; height: 70% !important; margin: 0 auto !important; display: block;">
+      <source src="/video?id=1" type="video/mp4">
     </video>
 </body>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+<script>
+  $(document).ready(function() {
+    /*$.ajax({
+      method: 'GET',
+      url: '/video',
+      success: function(data) {
+        console.log(data);
+        //$('#videoPlayer').attr('src', data);
+      },
+      error: function(err) {
+        console.log(err);
+      }
+    });
+    */
+  });
+</script>
+
 </html>
